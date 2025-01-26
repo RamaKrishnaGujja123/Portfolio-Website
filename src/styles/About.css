@@ -1,0 +1,56 @@
+.about {
+  background: rgba(10, 25, 47, 0.8); /* Semi-transparent background */
+  padding: 10rem 1.5rem 3rem; /* Increased top padding to accommodate the fixed header */
+  text-align: center; /* Centered text for headings */
+  color: #ccd6f6; /* Light text color */
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  border-radius: 15px; /* Rounded corners for a modern look */
+}
+
+.about h2 {
+  font-size: 2.5rem; /* Larger font for headings */
+  margin-bottom: 1.5rem; /* Spacing below heading */
+  color: #64ffda; /* Accent color for heading */
+  text-transform: uppercase; /* Uppercase text for heading */
+  letter-spacing: 1.5px; /* Spacing between letters */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+  animation: slideIn 1.5s ease-out; /* Slide-in animation */
+}
+
+/* Main content styling */
+.about p {
+  font-size: 1.2rem; /* Larger font for readability */
+  line-height: 1.8; /* Adequate line spacing */
+  max-width: 900px; /* Limit width for readability */
+  margin: 0 auto; /* Centered text */
+  background: rgba(17, 34, 64, 0.8); /* Slightly transparent background for text */
+  padding: 1.5rem; /* Padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about p:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

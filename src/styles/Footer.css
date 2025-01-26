@@ -1,0 +1,66 @@
+body {
+    margin-bottom: 60px;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #0a192f, #233554); /* Gradient effect */
+    color: #ccd6f6;
+    padding: 1.5rem 0; /* More padding for a balanced look */
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slideUp 1s ease-out, fadeIn 2s ease-in-out;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  footer p, footer a {
+    font-size: 1rem;
+    margin: 5px 0; /* Space out text for readability */
+  }
+  
+  footer a {
+    color: #ccd6f6;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+    display: inline-block;
+    margin-top: 5px; /* Add space above the link */
+  }
+  
+  footer a:hover {
+    color: #ff5f57; /* Change to your preferred hover color */
+    text-decoration: underline;
+  }
+  
+  footer i {
+    margin-right: 8px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    footer {
+      padding: 1rem 0;
+    }
+  
+    footer p, footer a {
+      font-size: 0.9rem; /* Smaller text for mobile devices */
+    }
+  }
